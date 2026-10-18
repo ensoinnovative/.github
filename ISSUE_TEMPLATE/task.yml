@@ -1,0 +1,21 @@
+name: Task
+description: A general work item that isn't a bug or a feature
+labels: ["type: task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes or links
