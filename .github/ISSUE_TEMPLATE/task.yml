@@ -1,6 +1,6 @@
 name: Task
 description: A general work item that isn't a bug or a feature
-labels: ["type: task"]
+type: Task
 body:
   - type: textarea
     id: description
