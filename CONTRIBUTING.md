@@ -14,7 +14,7 @@ type(scope): short summary in imperative mood
 Optional body explaining why, trade-offs, or gotchas.
 ```
 
-Types: feat, fix, docs, style, refactor, perf, test, build, chore.
+Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore.
 
 - Imperative mood, lowercase, no trailing period, 50 characters max
 - Use a scope by default (auth, db, docker, ui)
