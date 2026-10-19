@@ -18,5 +18,10 @@
     "name": "resolution: won't fix",
     "color": "ffffff",
     "description": "Decided not to do it"
+  },
+  {
+    "name": "dependencies",
+    "color": "0366d6",
+    "description": "Dependency update (Dependabot)"
   }
 ]
