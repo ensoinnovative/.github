@@ -15,7 +15,6 @@ This file is public. Never add secrets, credentials, client names, machine detai
 - The PR title becomes the squash commit, so it follows the same rules. The PR title check enforces them.
 - The PR body follows the PR template. Link the issue with `Closes #n`, or `Closes ensoinnovative/enso-hq#n` across repos. Use `Part of …` for partial work.
 - The squash commit body keeps only "What changed" and "Why".
-- No AI attribution anywhere: no Co-Authored-By lines, "Generated with" footers or mentions in commits, PRs, issues or code.
 
 ## Releases
 - SemVer with annotated `vX.Y.Z` tags and GitHub Releases.
@@ -31,6 +30,12 @@ This file is public. Never add secrets, credentials, client names, machine detai
 - When there are several reasonable ways to do something, lay out the options and tradeoffs and let the owner choose before starting.
 - For an issue or PR the owner will create, give every field ready to paste: title, each form field or template section, and sidebar settings (type, priority, project, labels).
 - Flag any credential that should go in the password manager, with a suggested item name and notes.
-- Flag anything that could become an SOP, handbook section, skill, agent, dashboard or project, with its scope (project, client or Enso-wide). Keep a running list.
 - Ask before anything destructive or irreversible.
 - Never commit secrets or `.env` files. A pre-commit secret scan runs on every commit.
+
+## Working with Claude chat
+Dustin uses two places: Claude Code (Ubuntu sessions) for code work, Claude chat for planning, research, logged-in websites and decisions.
+- No AI attribution anywhere: no "Co-Authored-By: Claude" trailers, no "Generated with Claude Code" lines, no AI or Claude mentions in commits, PR titles or bodies, issues, comments, release notes, code comments or docs.
+- Document your own work: when a task changes how Enso works (new tool, setup step, standard or gotcha), update the Engineering Handbook or Workstation Setup SOP yourself before calling the task done. Use the claude CLI in an Ubuntu terminal (Desktop-app WSL sessions have no Claude Docs connector). Add a decision-log row for any decision.
+- File flags as Ideas: anything that could become an SOP, handbook section, skill, agent, dashboard, artifact, Grok Bot or Claude project goes into ensoinnovative/enso-hq as an Idea issue, with Idea kind and Scope set. Mention each one in your reply.
+- Handoff summary: when Dustin asks for one, give a short block he can paste into chat: what was done (PRs and issues with links), decisions made and why, docs updated, Ideas filed, and open questions for chat.
